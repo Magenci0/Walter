@@ -194,7 +194,7 @@ nav {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/contents/Images/bon.gif');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/contents/Images/bon.gif'); */
 }
 
 .profile {
