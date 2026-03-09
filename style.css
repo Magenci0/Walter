@@ -13,6 +13,7 @@
     --color-accent-dark: #00BFFF;
     --color-card-background: #1C2B2D;
     --color-card-background-secondary: #ffffffe9;
+    --color-card-background-tertiary: #00BFFF;
     --padding-section: 60px 5%;
     --margin-bottom-section: 30px;
     --project-peek-space: 100px;
@@ -62,6 +63,27 @@ section {
 
 html {
     scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 5%;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 40px 7%;
+    }
 }
 
 /* --- Navigation Bar --- */
@@ -303,6 +325,40 @@ nav {
     }
 }
 
+@media (max-width: 992px) {
+
+    .profile {
+        gap: 30px;
+    }
+
+    .profile-text h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-introduction {
+        font-size: 0.95rem;
+    }
+
+}
+
 /* --- Skills Section (Tech Stack) --- */
 #skills {
     background-color: var(--color-background-quarternary);
@@ -311,7 +367,7 @@ nav {
 
 /* Header */
 .tech-stack-header {
-    color: var(--color-text-primary);
+    color: var(--color-text-quinary);
     text-align: center;
     margin-bottom: 10px;
     font-weight: bold;
@@ -332,7 +388,7 @@ nav {
 /* Grid */
 .tech-stack-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
     gap: 30px;
     width: 100%;
 }
@@ -359,7 +415,7 @@ nav {
     font-weight: 600;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    color: var(--color-accent);
+    color: var(--color-text-primary);
     margin-bottom: 10px;
 }
 
@@ -418,12 +474,12 @@ nav {
 }
 
 .projects-header {
-    color: var(--color-text-tertiary);
+    color: var(--color-text-quaternary);
 }
 
 .projects-wrapper {
     max-width:1100px;
-    height: 700px;
+    min-height: 500px;
     overflow: hidden;
     margin-bottom: 30px;
     position: relative;
@@ -543,10 +599,53 @@ nav {
     transform: scale(1.2);
 }
 
+/* Tablet */
+@media (max-width: 992px) {
+
+    .projects-wrapper {
+        padding: 0 40px;
+    }
+
+    .project-card h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .projects-wrapper {
+        padding: 0 20px;
+    }
+
+    .projects-slider {
+        width: 500%;
+    }
+
+    .project-card {
+        min-width: 100%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+    #Descrp1,
+    #Descrp2,
+    #Descrp3,
+    #Descrp4,
+    #Descrp5 {
+        font-size: 0.8rem;
+    }
+}
 
 /* --- Experiences Section --- */
 #experiences {
-    background-color: var(--color-background-primary);
+    background-color: var(--color-background-quarternary);
 }
 
 .experiences-gallery {
@@ -569,12 +668,19 @@ nav {
 }
 
 .experience-card {
-    background-color: var(--color-card-background);
+    background-color: var(--color-card-background-secondary);
     padding: 25px;
     border-radius: 8px;
-    border: 1px solid var(--color-card-background);
+    border: 5px solid var(--color-card-background-tertiary);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: border-color 0.3s ease;
+}
+
+#experience-header {
+    color: var(--color-text-quinary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .experience-card:hover {
@@ -582,7 +688,7 @@ nav {
 }
 
 .experience-card h3 {
-    color: var(--color-accent);
+    color: var(--color-text-tertiary);
     font-size: 1.2rem;
     margin-bottom: 10px;
     font-weight: 600;
@@ -596,9 +702,25 @@ nav {
 }
 
 .experience-card p {
-    color: var(--color-text-secondary);
+    color: var(--color-text-tertiary);
     font-size: 0.9rem;
     text-align: justify;
+}
+
+@media (max-width: 768px) {
+
+    .experience-photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .experience-photo-gallery {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /* --- Recommendation Section --- */
@@ -661,6 +783,19 @@ nav {
 }
 
 /* Responsive Adjustments */
+
+@media (max-width: 768px) {
+
+    .recommendation-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommendation-card {
+        width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
     .recommendation-gallery {
         gap: 20px;
@@ -717,6 +852,16 @@ nav {
 
 .footer-block a:hover {
     color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
 }
 
 /* --- Social Links (LinkedIn / Website) --- */
