@@ -45,17 +45,17 @@
         </div>
 
         <div class="about-introduction">
-            <p>I am Vhon Walter R. Morales, a Computer Engineer specializing in Embedded Systems, IoT, and Automation.
-                My work focuses on designing and delivering integrated technology solutions that bridge hardware and software. 
-                I have led projects from initial concept and system architecture through development, testing, deployment, and 
-                optimization. My experience includes embedded firmware development, circuit and hardware integration, wireless 
-                communication systems, IoT infrastructure deployment, and real-time control applications. I have contributed to 
-                robotics and automation projects, developing autonomous systems with sensor-based control and reliable performance. 
-                In IoT environments, I have designed scalable monitoring and data acquisition systems, ensuring efficient communication, 
-                low-power operation, and long-term reliability. Beyond technical execution, I have been involved in product development 
-                strategy, technical documentation, stakeholder presentations, and cross-functional collaboration — ensuring that engineering 
-                solutions align with operational objectives and business requirements. I am committed to building efficient, scalable, and 
-                high-impact systems that translate complex challenges into practical, real-world solutions.
+            <p>I am Vhon Walter R. Morales, a Computer Engineer focused on developing integrated 
+                technology solutions across embedded systems, IoT, and automation. My work centers 
+                on designing systems that connect hardware, software, and communication technologies 
+                to solve real-world engineering challenges. I have experience working across the full 
+                system development lifecycle, from concept design and system architecture to implementation, 
+                testing, and deployment. My background includes embedded firmware development, hardware 
+                and sensor integration, wireless communication systems, and IoT infrastructure for monitoring 
+                and control applications. Beyond engineering development, I contribute to solution planning, 
+                project coordination, and technical communication, ensuring that technology solutions are 
+                practical, scalable, and aligned with operational goals. I aim to build efficient and reliable 
+                systems that bridge innovation, engineering execution, and real-world impact.
             </p>
         </div>
     </section>
@@ -133,6 +133,31 @@
         <h2 class="projects-header">Projects</h2>
         <div class="projects-wrapper">
             <div class="projects-slider">
+                <div class="project-card" id="project-card-2" data-index="1">
+                    <div class="project-image">
+                        <img src="./contents/Images/iLibrary System/iLibrary.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>iLibrary: Library Management System</h3>
+                        <div id="Descrp2">  
+                            <p>
+                                Developed a full-stack RFID-based Library Management System by architecting a 
+                                hardware-software bridge between an Arduino Uno R3 and a custom C# .NET desktop application 
+                                for the application layer within the Microsoft Visual Studio 2022 environment. The hardware
+                                layer features an Arduino Uno R3 utilizing the SPI protocol to facilitate low-latency data 
+                                acquisition from RFID transponders. On the backend, I implemented a robust SQL database 
+                                management system to handle relational data mapping between assets and users. The final build 
+                                demonstrates a complete "edge-to-database" pipeline, from low-level hardware debugging and 
+                                signal testing to high-level UI/UX and database optimization.
+                            </p>
+                        </div>
+                        <div id="Specs2">
+                            <p>Hardware: SPI Interface, Arduino Uno R3, MFRC522 RFID Reader</p>
+                            <p>Programming Language: C++, C# .NET, SQL</p>
+                            <p>Toolchain and Methodologies: Arduino IDE, Microsoft Visual Studio 2022</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card active" id="project-card-1" data-index="0">
                     <div class="project-image">
                         <img src="./contents/Images/Robot/robot1.jpg" alt="Line Following Robot">
@@ -149,28 +174,6 @@
                             <p>Programming Language: None (Logic Circuit Design)</p>
                             <p>Toolchain and Methodologies: Breadboard, Multimeter, Soldering Kit,
                                 Truthtable, Karnaugh Mapping, Boolean Algebra</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card-2" data-index="1">
-                    <div class="project-image">
-                        <img src="./contents/Images/iLibrary System/iLibrary.png" alt="">
-                    </div>
-                    <div class="project-content">
-                        <h3>iLibrary: Library Management System</h3>
-                        <div id="Descrp2">  
-                            <p>
-                                Designed and built a library management system that has an RFID 
-                                scanner to track books and users. The system automates book check-in 
-                                and check-out processes, improving efficiency and accuracy in library 
-                                operations. We used RFID technology and Arduino Uno R3 for it's hardware 
-                                part. Also I used database management for tracking books and users.
-                            </p>
-                        </div>
-                        <div id="Specs2">
-                            <p>Hardware: SPI Interface, Arduino Uno R3, MFRC522 RFID Reader</p>
-                            <p>Programming Language: C++, C# .NET, SQL</p>
-                            <p>Toolchain and Methodologies: Arduino IDE, Microsoft Visual Studio 2022</p>
                         </div>
                     </div>
                 </div>
