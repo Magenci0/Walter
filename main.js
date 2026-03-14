@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href') || link.getAttribute('data-target');
-            // If using .bar text as links, you might need data-target="#about" etc.
             if (href && href.startsWith('#')) {
                 e.preventDefault();
                 const targetId = href.substring(1);
@@ -68,15 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const footer = document.querySelector('footer'); 
     const yearSpan = document.querySelector('.footer-bottom span');
 
-    // Update Year automatically
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
     if (backToTopBtn && footer) {
         window.addEventListener('scroll', () => {
-            // Precise detection: get footer position relative to viewport
             const footerRect = footer.getBoundingClientRect();
             
-            // If the top of the footer is less than the window height, it's visible
             if (footerRect.top < window.innerHeight) {
                 backToTopBtn.classList.add('show');
             } else {
