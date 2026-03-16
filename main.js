@@ -7,38 +7,54 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.toggle('active');
     });
 
-    // --- Project Slider Logic ---
+        // --- Project Slider Logic ---
     const projectsSlider = document.querySelector('.projects-slider');
     const projectCards = document.querySelectorAll('.project-card');
     const dots = document.querySelectorAll('.dot');
-    
+
     if (projectsSlider && projectCards.length > 0) {
+
         const numProjects = projectCards.length;
-        const cardWidthPercentage = 100 / numProjects; 
+        const cardWidthPercentage = 100 / numProjects;
+
         projectsSlider.style.width = `${numProjects * 100}%`;
-        
+
         projectCards.forEach(card => {
             card.style.minWidth = `${cardWidthPercentage}%`;
         });
 
         function updateSlider(activeIndex) {
-            const offset = activeIndex * cardWidthPercentage; 
+
+            const offset = activeIndex * cardWidthPercentage;
+
             projectsSlider.style.transform = `translateX(-${offset}%)`;
+
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === activeIndex);
             });
+
             projectCards.forEach((card, index) => {
                 card.classList.toggle('active', index === activeIndex);
             });
+
         }
 
-        updateSlider(0); 
+        updateSlider(0);
+
         dots.forEach(dot => {
             dot.addEventListener('click', function() {
                 const targetIndex = parseInt(this.getAttribute('data-index'));
                 updateSlider(targetIndex);
             });
         });
+
+        projectCards.forEach(card => {
+            card.addEventListener('click', function() {
+                const targetIndex = parseInt(this.getAttribute('data-index'));
+                updateSlider(targetIndex);
+            });
+        });
+
     }
 
     // --- Smooth Scroll for Nav Links ---

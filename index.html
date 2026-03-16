@@ -25,10 +25,10 @@
 
         <!-- Hamburger Menu -->
         <div class="hamburger-menu">
-            <div class="bar">About</div>
-            <div class="bar">Projects</div>
-            <div class="bar">Experiences</div>
-            <div class="bar">Contact</div>
+            <span class="bar">About</span>
+            <span class="bar">Projects</span>
+            <span class="bar">Experiences</span>
+            <span class="bar">Contact</span>
         </div>
     </nav>
 
@@ -91,7 +91,7 @@
                         <div class="skill-pill">The Things Network (TTN)</div>
                         <div class="skill-pill">Datacake</div>
                         <div class="skill-pill">Git / GitHub / GitLab</div>
-                        <div class="skill-pill">Linux (Ubuntu/Debian)</div>
+                        <div class="skill-pill">Linux/Windows</div>
                         <div class="skill-pill">STM32CubeProgrammer</div>
                         <div class="skill-pill">KiCad / DipTrace</div>
                         <div class="skill-pill">Fusion 360 / AutoCAD</div>
@@ -133,13 +133,13 @@
         <h2 class="projects-header">Projects</h2>
         <div class="projects-wrapper">
             <div class="projects-slider">
-                <div class="project-card" id="project-card-2" data-index="1">
+                <div class="project-card" id="project-card-1" data-index="0">
                     <div class="project-image">
                         <img src="./contents/Images/iLibrary System/iLibrary.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3>iLibrary: Library Management System</h3>
-                        <div id="Descrp2">  
+                        <div id="project-description">  
                             <p>
                                 Developed a full-stack RFID-based Library Management System by architecting a 
                                 hardware-software bridge between an Arduino Uno R3 and a custom C# .NET desktop application 
@@ -151,39 +151,20 @@
                                 signal testing to high-level UI/UX and database optimization.
                             </p>
                         </div>
-                        <div id="Specs2">
+                        <div id="project-specs">
                             <p>Hardware: SPI Interface, Arduino Uno R3, MFRC522 RFID Reader</p>
                             <p>Programming Language: C++, C# .NET, SQL</p>
                             <p>Toolchain and Methodologies: Arduino IDE, Microsoft Visual Studio 2022</p>
                         </div>
                     </div>
                 </div>
-                <div class="project-card active" id="project-card-1" data-index="0">
-                    <div class="project-image">
-                        <img src="./contents/Images/Robot/robot1.jpg" alt="Line Following Robot">
-                    </div>
-                    <div class="project-content">
-                        <h3>Line Following Robot</h3>
-                        <div id="Descrp1">
-                            <p>Designed and built a line-following robot using LOGIC GATES, 
-                                for autonomous navigation. Create the logic algorithm by using 
-                                Karnaugh Maps, Boolean Algebra, and Truth Tables.</p>
-                        </div>
-                        <div id="Specs1">
-                            <p>Hardware: , Logic Gates, Battery, L298N Motor Driver, 5V DC Motor, IR Sensors</p>
-                            <p>Programming Language: None (Logic Circuit Design)</p>
-                            <p>Toolchain and Methodologies: Breadboard, Multimeter, Soldering Kit,
-                                Truthtable, Karnaugh Mapping, Boolean Algebra</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" id="project-card-3" data-index="2">
+                <div class="project-card" id="project-card-2" data-index="1">
                     <div class="project-image">
                         <img src="./contents/Images/Aerovest/aerovest1.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3>Aerovest</h3>
-                        <div id="Descrp3">  
+                        <div id="project-description">  
                             <p>
                                 Developed thesis study whereas we created a wearable automatic cooling vest 
                                 that utilizes cooling technology to regulate body temperature of electricians 
@@ -195,10 +176,29 @@
                                 the status of their field workers even without access to the internet.
                             </p>
                         </div>
-                        <div id="Specs3">
+                        <div id="project-specs">
                             <p>Hardware: ESP32, DHT11, MAX30102, Battery, 5V DC Fan</p>
                             <p>Programming Language: C++, C# .NET, SQL</p>
                             <p>Toolchain and Methodologies:Arduino IDE, Microsoft Visual Studio 2022, ESPNOW Library, Diptrace</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" id="project-card-3" data-index="2">
+                    <div class="project-image">
+                        <img src="./contents/Images/Robot/robot1.jpg" alt="Line Following Robot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Line Following Robot</h3>
+                        <div id="project-description">
+                            <p>Designed and built a line-following robot using LOGIC GATES, 
+                                for autonomous navigation. Create the logic algorithm by using 
+                                Karnaugh Maps, Boolean Algebra, and Truth Tables.</p>
+                        </div>
+                        <div id="project-specs">
+                            <p>Hardware: , Logic Gates, Battery, L298N Motor Driver, 5V DC Motor, IR Sensors</p>
+                            <p>Programming Language: None (Logic Circuit Design)</p>
+                            <p>Toolchain and Methodologies: Breadboard, Multimeter, Soldering Kit,
+                                Truthtable, Karnaugh Mapping, Boolean Algebra</p>
                         </div>
                     </div>
                 </div>
@@ -208,14 +208,14 @@
                     </div>
                     <div class="project-content">
                         <h3>Automatic Retractable Awning</h3>
-                        <div id="Descrp4">  
+                        <div id="project-description">  
                             <p>
                                 Created an solar powered automatic retractable awning system 
                                 that uses rain sensors to automatically extend or retract the awning based
                                 on weather conditions. The system is designed to protect outdoor spaces.
                             </p>
                         </div>
-                        <div id="Specs4">
+                        <div id="project-specs">
                             <p>Hardware: 24v Planetary DC Gear Motor, Rain Sensors, ESP32, DC-DC Buck Converter
                                 24v Battery, Solar Panel, Solar Charge Controller, Fuse, Current Sensor
                             </p>
@@ -233,7 +233,7 @@
                     </div>
                     <div class="project-content">
                         <h3>Automatic Recyclable Dispenser: Paper to Pen</h3>
-                        <div id="Descrp5">  
+                        <div id="project-description">  
                             <p>
                                 Developed an automatic recyclable dispenser that converts used paper 
                                 into pens. The system uses a weight sensor to measure the amount of paper 
@@ -242,7 +242,7 @@
                                 waste in a creative way in universities.
                             </p>
                         </div>
-                        <div id="Specs5">
+                        <div id="project-specs">
                             <p>Hardware: Arduino Uno r3, Servo Motor, 16x2 LCD Display, 
                                 Push Buttons, Weight Sensor, Load Cell.</p>
                             <p>Programming Language: C++</p>
