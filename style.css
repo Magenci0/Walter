@@ -515,16 +515,18 @@ nav.active .hamburger-menu .bar:nth-child(3) {
     position: relative;
     width: 100%;
     padding: 0 var(--project-peek-space);
+    box-sizing: border-box;
 }
 
 .projects-slider {
     position: relative;
-    width: 500%;
+    width: max-content;
     height: 100%;
     display: flex;
     overflow-x: visible; 
     padding-bottom: 0;
     transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    gap: 20px;
 }
 
 .project-content {
