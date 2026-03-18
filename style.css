@@ -9,6 +9,7 @@
     --color-text-tertiary: #111111;
     --color-text-quaternary: #00BFFF;
     --color-text-quinary: #00FFFF;
+    --color-text-senary: #539ea8;
     --color-accent: #00FFFF;
     --color-accent-dark: #00BFFF;
     --color-card-background: #1C2B2D;
@@ -718,7 +719,7 @@ nav.active .hamburger-menu .bar:nth-child(3) {
 }
 
 .experience-card h4 {
-    color: var(--color-text-primary);
+    color: var(--color-text-senary);
     font-size: 1rem;
     margin-bottom: 15px;
     font-weight: bold;
